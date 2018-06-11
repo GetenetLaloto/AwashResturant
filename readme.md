@@ -5,7 +5,7 @@ This a website
 - pictures of items
 - food tray select multiple items (with id server knows that it wants)
 - before submitting you have to put address to verify if can deliver or not.
-- think about the menu structure (for example a steak has different temperatures while a toast is just toast)
+- think about the menu structure (for example kitfo has different temperatures while doro wot has no pereferance )
 - payment (handled later)
 
 ### server
