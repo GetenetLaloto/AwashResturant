@@ -9,11 +9,10 @@ app.use(parser.json());
 app.set('view engine', 'ejs');
 
 app.get('/', (req, res)=>{
-  console.log('/');
+  res.render('pages/index');
 });
 
 app.get('/*', (req, res)=>{
-  console.log('*');
   res.redirect('/');
 });
 

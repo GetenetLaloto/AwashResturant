@@ -5,7 +5,10 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node index.js"
+    "build-css": "node-sass-chokidar --include-path ./node_modules ./public/css -o ./public/css",
+    "watch-css": "npm run build-css && node-sass-chokidar --include-path ./node_modules ./public/css -o ./public/css --watch --recursive",
+    "start-js": "node ./index.js",
+    "start": "npm-run-all -p watch-css start-js"
   },
   "repository": {
     "type": "git",
