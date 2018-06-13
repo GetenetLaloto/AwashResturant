@@ -10,4 +10,46 @@
   justify-content: center
   flex-direction: column
   .main
+    width: 100%
+    min-height: calc(100vh - 30px)
     margin: auto
+    .slideshow-wrapper
+      width: 100%
+      overflow: hidden
+      max-height: 300px
+      position: relative
+      .slideshow-view
+        // width should be change in js and depending on images
+        width: 400vw
+        display: flex
+        transition: transform 600ms
+        .image
+          display: inline-block
+          width: 300vw
+          margin: 0
+          min-height: 300px
+      .dots-wrapper
+        position: absolute
+        display: flex
+        justify-content: center
+        width: 100vw
+        bottom: 10px
+        .dot
+          cursor: pointer
+          border-radius: 100%
+          margin: 0px 7px
+          background-color: rgba(0,0,0,.6)
+          width: 12px
+          height: 12px
+    .button
+      margin-left: auto
+      margin-right: auto
+
+.blue
+  background-color: blue
+.red
+  background-color: red
+.green
+  background-color: green
+.pink
+  background-color: pink

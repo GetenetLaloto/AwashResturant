@@ -1,4 +1,4 @@
-<% var customJS="" %>
+<% var customJS="js/index.js" %>
 <% var customCSS="css/index.css" %>
 <% var title="Home" %>
 <% include ../partials/header %>
@@ -6,7 +6,19 @@
   <div class='whole-wrapper'>
     <div class='main'>
       <div class='slideshow-wrapper'>
-        <div class='image'></div>
+        <div class='slideshow-view'>
+          <div class='image blue'></div>
+          <div class='image red'></div>
+          <div class='image green'></div>
+          <div class='image pink'></div>
+        </div>
+        <div class='dots-wrapper'>
+          <!-- TODO dots should be set by number of image -->
+          <div class='dot'></div>
+          <div class='dot'></div>
+          <div class='dot'></div>
+          <div class='dot'></div>
+        </div>
       </div>
       <div class='button'>Order Online</div>
       <div class='button'>Make reservation</div>
