@@ -9,7 +9,11 @@ app.use(parser.json());
 app.set('view engine', 'ejs');
 
 app.get('/', (req, res)=>{
-  res.render('pages/index');
+  const imagesPath = [];
+  for(let i = 0; i < 10; i++){
+    imagesPath.push(`images/slideshow/slideshow_img_${i}.jpg`);
+  }
+  res.render('pages/index', {imagesPath: imagesPath});
 });
 
 app.get('/*', (req, res)=>{
