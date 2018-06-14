@@ -6,18 +6,17 @@
   <div class='whole-wrapper'>
     <div class='main'>
       <div class='slideshow-wrapper'>
-        <div class='slideshow-view'>
-          <div class='image blue'></div>
-          <div class='image red'></div>
-          <div class='image green'></div>
-          <div class='image pink'></div>
+        <div class='slideshow-view' style='width: <%= (imagesPath.length*100) %>vw'>
+          <div class='logo'></div>
+          <% for(let i = 0; i < imagesPath.length; i++){ %>
+            <div class='image' style='background-image: url("<%= imagesPath[i] %>")'></div>
+          <% } %>
         </div>
         <div class='dots-wrapper'>
           <!-- TODO dots should be set by number of image -->
-          <div class='dot'></div>
-          <div class='dot'></div>
-          <div class='dot'></div>
-          <div class='dot'></div>
+          <% for(let i = 0; i < imagesPath.length; i++){ %>
+            <div class='dot'></div>
+          <% } %>
         </div>
       </div>
       <div class='button'>Order Online</div>
