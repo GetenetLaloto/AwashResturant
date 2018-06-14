@@ -5,15 +5,16 @@
 <body>
   <div class='whole-wrapper'>
     <div class='main'>
-      <div class='slideshow-wrapper'>
-        <div class='slideshow-view' style='width: <%= (imagesPath.length*100) %>vw'>
-          <div class='logo'></div>
-          <% for(let i = 0; i < imagesPath.length; i++){ %>
-            <div class='image' style='background-image: url("<%= imagesPath[i] %>")'></div>
-          <% } %>
+      <div class='slideshow'>
+        <div class='slideshow-wrapper'>
+          <div class='slideshow-view' style='width: <%= (imagesPath.length*100) %>vw'>
+            <div class='logo'></div>
+            <% for(let i = 0; i < imagesPath.length; i++){ %>
+              <div class='image' style='background-image: url("<%= imagesPath[i] %>")'></div>
+            <% } %>
+          </div>
         </div>
         <div class='dots-wrapper'>
-          <!-- TODO dots should be set by number of image -->
           <% for(let i = 0; i < imagesPath.length; i++){ %>
             <div class='dot'></div>
           <% } %>
