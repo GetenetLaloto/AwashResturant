@@ -13,14 +13,19 @@ body
   font-size: 1rem
   font-weight: 400
   line-height: 1.5
+  background-color: #515150
 
 *, *::before, *::after
   box-sizing: inherit
 
 .button
-    padding: 7px 10px
-    background-color: black
+    padding: 10px 12px
+    background-color: rgb(117, 7, 12)
     color: white
     width: 120px
     text-align: center
     margin: 5px
+    cursor: pointer
+    transition: background-color 300ms
+    &:hover
+      background-color: #62060a
