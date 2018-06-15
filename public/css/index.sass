@@ -16,7 +16,7 @@
     display: flex
     flex-direction: column
     .slideshow
-      max-height: 300px
+      height: 300px
       position: relative
       .slideshow-wrapper
         width: 100%
@@ -26,7 +26,6 @@
         -webkit-overflow-scrolling: touch
         .slideshow-view
           display: flex
-          transition: transform 600ms
           .logo
             background-image: url('/images/slideshow/logo.png')
             background-repeat: no-repeat
@@ -43,11 +42,12 @@
             background-size: cover
             background-repeat: no-repeat
       +medium-devices
-        // max-height: 400px
-        max-height: 50vh
+        min-height: 400px
+        height: 50vh
         .slideshow-wrapper
           .slideshow-view
             .image
+              min-height: 400px
               height: 50vh
       .dots-wrapper
         position: absolute
